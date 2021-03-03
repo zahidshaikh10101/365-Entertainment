@@ -1,0 +1,239 @@
+
+<html>
+
+  <head>
+    <title>365 Entertainment Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logo.jpg" type="image/png" sizes="16x20">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header>
+
+        <div class="navigation">
+
+          <a class="links" href="index.html"><img class="logo" src="images/logo.jpg" alt="365 Entertainment Portal"/></a>
+          <a class="links text" href="#">Movies</a>
+          <a class="links text" href="#tv_series">TV Series</a>
+          <a class="links text" href="#audio">Audio</a>
+
+
+        </div>
+
+        <div class="bar"></div>
+
+      </header>
+
+      <div class="content">
+
+        <div class="head-content">
+
+          <div class="slideshow-container">
+            <div class="slides">
+                <img src="images/bg7.jpg" alt="hero carousel">
+              </div>
+  
+              <div class="slides">
+                <img src="images/bg6.jpg" alt="hero carousel">
+              </div>
+  
+              <div class="slides">
+                <img src="images/bg8.jpg" alt="hero carousel">
+              </div>
+  
+              <div class="slides">
+                <img src="images/bg9.jpg" alt="hero carousel">
+              </div>
+  
+              <div class="slides">
+                <img src="images/bg10.jpg" alt="hero carousel">
+              </div>  
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          </div>
+
+        </div>
+
+
+        <div class="dropdown">
+          <button class="dropbtn"><span id="genreText">Genre</span><i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="getMediaPosters(this.text)">All</a>
+            <a onclick="getMediaPosters(this.text)">Action</a>
+            <a onclick="getMediaPosters(this.text)">Drama</a>
+            <a onclick="getMediaPosters(this.text)">Sci-Fi</a>
+          </div>
+
+        </div>
+
+
+        <div class="search-container">
+          <form onsubmit="javascript:return false;">
+            <input type="text" class="input-medium search-query" placeholder="Search your favourite movie title" name="search" oninput="updateResults()">
+
+            <div class="search-container-button">
+              <button type="submit" onclick="updateResults()"><i class="fa fa-search"></i></button>
+            </div>
+
+          </form>
+        </div>
+
+        <div id="media-carousel-container">
+
+
+          <div id="media-holder-action">
+
+            <div id="image-container-action">
+              <div class="movies-action">
+                <div class="media-carousel-movies">
+                  <img src="images/act1.jpg" alt="hero carousel" width=200 height=200 />
+                  <div class="overlay"><b>Dabangg 3</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/act2.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Kesari</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/act3.jpg" alt="hero carousel" width=200 height=200 />
+                  <div class="overlay"><b>War</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/act4.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Bahubali- The Conclusion</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/act5.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Tiger Zinda Hai</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/act6.jfif" alt="hero carousel" width=200 height=200 />
+                  <div class="overlay"><b>Mohenjo Daro</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/act7.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Baaghi 3</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/act8.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Tanhaji</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/act9.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Mardaani 2</b><br/>Bollywood</div>
+                </div>
+              </div>
+
+              <div class="movies-drama">
+                <div class="media-carousel-movies">
+                  <img src="images/dra1.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Raees</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra2.jpg" alt="hero carousel" width=200 height=200 />
+                  <div class="overlay"><b>Hindi Medium</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra3.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Sui Dhaga</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra4.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Sanju</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra5.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Padmaavat</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra6.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Andhadun</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra7.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Gold</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra8.jpg" alt="hero carousel" width=200 height=200 />
+                  <div class="overlay"><b>Dhadak</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra9.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Azhar</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra10.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Sultan</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra11.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Dhoom 3</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/dra12.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Happy New Year</b><br/>Bollywood</div>
+                </div>
+              </div>
+
+              <div class="movies-scifi">
+                <div class="media-carousel-movies">
+                  <img src="images/sci1.jpg" alt="hero carousel" width=200 height=200 />
+                  <div class="overlay"><b>Ra One</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/sci2.jpg" alt="hero carousel" width=200 height=200 />
+                  <div class="overlay"><b>Robot</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/sci3.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Action Replayy</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/sci4.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Krrish</b><br/>Bollywood</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/sci5.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>PK</b><br/>Bollywood</div>
+                </div>
+
+                <div class="media-carousel-movies">
+                  <img src="images/sci6.jpg" alt="hero carousel" width=200 height=200 />
+                <div class="overlay"><b>Mission Mangal</b><br/>Bollywood</div>
+                </div>
+                
+
+              </div>
+            </div>
+          </div>
+<!--2Tg4XCNp^DeJM6FQi@jP-->
+          
+          <div id="no-results">No More Results Found.</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+
+      <div class="copyright">
+        <a class="links" href="index.html"><img class="logo" src="images/logo.jpg" alt="365 Entertainment Portal"/></a>
+        <div class="text">Powered by 365 Entertainment Portal 2019. All Rights Reserved.</div>
+      </div>
+
+    </footer>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+
+</html>
